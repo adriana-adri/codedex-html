@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codédex Restaurant</title>
+    <link rel="icon" type="image/png" href="img/codedex-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/codedex-logo.png" alt="Codédex Logo" id="header-img" />
+      <h1>Codédex Restaurant</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order-form">Order Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="menu">
+        <h2>Menu</h2>
+        <p>
+          Welcome to Codédex Restaurant, your go-to place for delicious meals
+          and exceptional service.
+        </p>
+        <article class="menu-item">
+          <img
+            src="img/carbonara.jpg"
+            alt="Spaghetti Carbonara"
+            class="menu-img"
+          />
+          <div>
+            <h3>Spaghetti Carbonara</h3>
+            <p>
+              Classic Italian pasta dish made with eggs, cheese, pancetta, and
+              pepper.
+            </p>
+            <p class="price">$12.99</p>
+          </div>
+        </article>
+        <article class="menu-item">
+          <img src="img/pizza.jpg" alt="Margherita Pizza" class="menu-img" />
+          <div>
+            <h3>Margherita Pizza</h3>
+            <p>
+              Traditional pizza topped with fresh tomatoes, mozzarella cheese,
+              and basil.
+            </p>
+            <p class="price">$10.99</p>
+          </div>
+        </article>
+        <article class="menu-item">
+          <img src="img/salad.jpg" alt="Caesar Salad" class="menu-img" />
+          <div>
+            <h3>Caesar Salad</h3>
+            <p>
+              Crisp romaine lettuce tossed with Caesar dressing, croutons, and
+              Parmesan cheese.
+            </p>
+            <p class="price">$8.99</p>
+          </div>
+        </article>
+        <article class="menu-item">
+          <img src="img/tiramisu.png" alt="Tiramisu" class="menu-img" />
+          <div>
+            <h3>Tiramisu</h3>
+            <p>
+              Classic Italian dessert made with layers of coffee-soaked
+              ladyfingers and mascarpone cheese.
+            </p>
+            <p class="price">$6.99</p>
+          </div>
+        </article>
+      </section>
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+          <fieldset>
+            <legend>Choose your items:</legend>
+            <div class="order-menu-row">
+              <label for="carbonara">
+                <img
+                  src="img/carbonara.jpg"
+                  alt="Spaghetti Carbonara"
+                  class="order-menu-img"
+                />
+                Spaghetti Carbonara:
+                <p class="price">$12.99</p>
+                <input
+                  type="number"
+                  id="carbonara"
+                  name="carbonara"
+                  min="0"
+                  value="0"
+                />
+              </label>
+              <label for="pizza">
+                <img
+                  src="img/pizza.jpg"
+                  alt="Margherita Pizza"
+                  class="order-menu-img"
+                />
+                Margherita Pizza:
+                <p class="price">$10.99</p>
+                <input
+                  type="number"
+                  id="pizza"
+                  name="pizza"
+                  min="0"
+                  value="0"
+                />
+              </label>
+            </div>
+            <div class="order-menu-row">
+              <label for="salad">
+                <img
+                  src="img/salad.jpg"
+                  alt="Caesar Salad"
+                  class="order-menu-img"
+                />
+                Caesar Salad:
+                <p class="price">$8.99</p>
+                <input
+                  type="number"
+                  id="salad"
+                  name="salad"
+                  min="0"
+                  value="0"
+                />
+              </label>
+              <label for="tiramisu">
+                <img
+                  src="img/tiramisu.png"
+                  alt="Tiramisu"
+                  class="order-menu-img"
+                />
+                Tiramisu:
+                <p class="price">$6.99</p>
+                <input
+                  type="number"
+                  id="tiramisu"
+                  name="tiramisu"
+                  min="0"
+                  value="0"
+                />
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Sides</legend>
+            <div class="order-sides-row">
+              <label for="side_bread">
+                <img
+                  src="img/garlic-bread.png"
+                  alt="Garlic Bread"
+                  class="order-side-img"
+                />
+                <input
+                  type="checkbox"
+                  name="side_bread"
+                  value="bread"
+                  id="side_bread"
+                />
+                Garlic Bread
+                <p class="price">+ $3.99</p>
+              </label>
+              <label for="side_fries">
+                <img
+                  src="img/fries.jpeg"
+                  alt="French Fries"
+                  class="order-side-img"
+                />
+                <input
+                  type="checkbox"
+                  name="side_fries"
+                  value="fries"
+                  id="side_fries"
+                />
+                French Fries
+                <p class="price">+ $3.99</p>
+              </label>
+              <label for="side_salad">
+                <img
+                  src="img/side-salad.jpeg"
+                  alt="Side Salad"
+                  class="order-side-img"
+                />
+                <input
+                  type="checkbox"
+                  name="side_salad"
+                  value="side_salad"
+                  id="side_salad"
+                />
+                Side Salad
+                <p class="price">+ $3.99</p>
+              </label>
+            </div>
+            <legend>Drinks</legend>
+            <div class="order-sides-row">
+              <label for="drink_water">
+                <img src="img/water.jpeg" alt="Water" class="order-side-img" />
+                <input
+                  type="radio"
+                  name="drink"
+                  value="water"
+                  id="drink_water"
+                  checked
+                />
+                Water
+                <p class="price">+ $1.99</p>
+              </label>
+              <label for="drink_soda">
+                <img src="img/soda.jpg" alt="Soda" class="order-side-img" />
+                <input type="radio" name="drink" value="soda" id="drink_soda" />
+                Soda
+                <p class="price">+ $2.99</p>
+              </label>
+              <label for="drink_juice">
+                <img src="img/juice.jpg" alt="Juice" class="order-side-img" />
+                <input
+                  type="radio"
+                  name="drink"
+                  value="juice"
+                  id="drink_juice"
+                />
+                Juice
+                <p class="price">+ $2.99</p>
+              </label>
+            </div>
+          </fieldset>
+          <br />
+          <label for="special-requests">Special Requests:</label>
+          <textarea
+            id="special-requests"
+            name="special-requests"
+            rows="5"
+            cols="70"
+            placeholder="Please specify any special requests or dietary restrictions."
+            required
+          ></textarea>
+          <button type="submit">Go To Checkout</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 Codédex Restaurant. All rights reserved. Made with ❤️ by
+        Adriana
+      </p>
+    </footer>
+  </body>
+</html>
